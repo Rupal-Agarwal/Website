@@ -11758,4 +11758,13 @@ html {
   .contact-info div {
       margin-bottom: 5px;
   }
+
+  .edu-logo{
+  width: 80px;          /* control logo size */
+  height: 80px;
+  object-fit: contain;  /* keep proportions */
+}
+@media (min-width: 992px){
+  .edu-logo{ width: 96px; height: 96px; }
+}
 }
