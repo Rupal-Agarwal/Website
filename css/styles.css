@@ -11760,22 +11760,31 @@ html {
   }
 }
 
-  .edu-logo{
-  width: 120px;          /* control logo size */
-  height: 120px;
-  object-fit: contain;  /* keep proportions */
+/* Extra left padding inside the card */
+.edu-card .card-body {
+  padding-left: 2.5rem;          /* increase gap from left edge */
 }
-@media (min-width: 992px){
-  .edu-logo{ width: 136px; height: 136px; }
+@media (min-width: 768px){
+  .edu-card .card-body { padding-left: 3rem; }
 }
-
-/* Logo size */
-img.edu-logo { width: 96px; height: 96px; object-fit: contain; }
 @media (min-width: 1200px){
-  img.edu-logo { width: 104px; height: 104px; }
+  .edu-card .card-body { padding-left: 3.5rem; }
 }
 
-/* Comfortable line spacing */
-.edu-card h5 { margin-bottom: .5rem; line-height: 1.25; }
-.edu-card .text-muted { line-height: 1.4; }
+/* Bigger gap between logo and text than Bootstrap's gap-5 */
+.edu-row {
+  gap: 2.5rem;                   /* ~40px on small screens */
+}
+@media (min-width: 768px){
+  .edu-row { gap: 3rem; }        /* ~48px */
+}
+@media (min-width: 1200px){
+  .edu-row { gap: 4rem; }        /* ~64px */
+}
+
+/* Logo size (adjust if needed) */
+img.edu-logo { width: 104px; height: 104px; object-fit: contain; }
+@media (min-width: 1200px){
+  img.edu-logo { width: 112px; height: 112px; }
+}
 
