@@ -11761,10 +11761,10 @@ html {
 }
 
   .edu-logo{
-  width: 100px;          /* control logo size */
-  height: 100px;
+  width: 120px;          /* control logo size */
+  height: 120px;
   object-fit: contain;  /* keep proportions */
 }
 @media (min-width: 992px){
-  .edu-logo{ width: 116px; height: 116px; }
+  .edu-logo{ width: 136px; height: 136px; }
 }
