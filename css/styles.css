@@ -11760,11 +11760,11 @@ html {
   }
 
   .edu-logo{
-  width: 50px;          /* control logo size */
-  height: 50px;
+  width: 10px;          /* control logo size */
+  height: 10px;
   object-fit: contain;  /* keep proportions */
 }
-@media (min-width: 50px){
-  .edu-logo{ width: 10px; height: 10px; }
+@media (min-width: 992px){
+  .edu-logo{ width: 15px; height: 15px; }
 }
 }
