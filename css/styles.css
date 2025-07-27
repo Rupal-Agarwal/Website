@@ -11769,12 +11769,13 @@ html {
   .edu-logo{ width: 136px; height: 136px; }
 }
 
-.edu-card .card-body { padding-block: 1rem; }            /* reduce vertical padding */
-.edu-card h5 { margin-bottom: .5rem; line-height: 1.25; }
-.edu-card .text-muted { line-height: 1.35; }
-
 /* Logo size */
-img.edu-logo { width: 88px; height: 88px; object-fit: contain; }
-@media (min-width: 992px){
-  img.edu-logo { width: 96px; height: 96px; }
+img.edu-logo { width: 96px; height: 96px; object-fit: contain; }
+@media (min-width: 1200px){
+  img.edu-logo { width: 104px; height: 104px; }
 }
+
+/* Comfortable line spacing */
+.edu-card h5 { margin-bottom: .5rem; line-height: 1.25; }
+.edu-card .text-muted { line-height: 1.4; }
+
