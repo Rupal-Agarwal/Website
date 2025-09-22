@@ -11652,27 +11652,32 @@ img.edu-logo { width: 104px; height: 104px; object-fit: contain; }
 }
 
 .profile-section {
-    position: relative;
-    margin-top: 2rem;
+    display: flex;
+    align-items: stretch;   /* image + text equal height */
+    gap: clamp(16px, 3vw, 32px);
+    margin-top: 2rem; 
 }
 
 .profile-image-container {
-    float: left;
-    margin-right: 5rem;
-    margin-bottom: 1rem;
-    margin-top: 0;
+    flex: 0 0 clamp(220px, 28vw, 360px);  /* responsive fixed width */
+    margin: 0; 
 }
 
-.profile-img-float {
-    width: 450px;
-    height: 530px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Profile image */
+.profile-image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;            /* stretches to match text column height */
+  object-fit: cover;       /* crop neatly; use 'contain' to avoid cropping */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
-    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* stack paragraphs */
+    justify-content: space-between;
     font-size: 22px;
 }
 
