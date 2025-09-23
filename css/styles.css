@@ -11729,3 +11729,12 @@ img.edu-logo { width: 104px; height: 104px; object-fit: contain; }
   font-size: 14px;
   color: #6c757d;  /* subtle gray */
 }
+
+.about-title {
+  font-size: 28px;       /* slightly larger than body text */
+  font-weight: bold;
+  margin-bottom: 1rem;   /* space between title and paragraph */
+  text-align: left;      /* aligns with paragraph text */
+  color: #000;           /* black for clarity */
+}
+
