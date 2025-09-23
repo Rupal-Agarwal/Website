@@ -88,6 +88,8 @@
                                     alt="..." style="width: 35px;height:35px;" /></a>
 
                         </div>
+                        <p class="footer-text mt-3 mb-0">&copy; <span id="year"></span> Rupal Agarwal</p>
+
                     </div>
                 </div>
             </div>
@@ -97,6 +99,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
 
 </html>
